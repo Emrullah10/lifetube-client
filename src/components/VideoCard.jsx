@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { formatDistanceToNow } from 'date-fns';
+import { API_BASE_URL } from '../services/api';
 import './VideoCard.css';
 
 const VideoCard = ({ video }) => {
@@ -27,7 +28,7 @@ const VideoCard = ({ video }) => {
   const timeAgo = formatDistanceToNow(new Date(video.created_at), { addSuffix: true });
 
   const thumbnailUrl = video.thumbnail_url?.startsWith('/uploads')
-    ? `http://localhost:5000${video.thumbnail_url}`
+    ? `${API_BASE_URL}${video.thumbnail_url}`
     : video.thumbnail_url;
 
   return (
