@@ -1,0 +1,44 @@
+.channel-page {
+  padding: var(--spacing-lg);
+}
+
+.channel-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-xl);
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.channel-avatar-large {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.channel-info {
+  flex: 1;
+}
+
+.channel-info h1 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.subscriber-count {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.channel-content h2 {
+  margin-bottom: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+  .channel-header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
