@@ -151,7 +151,10 @@ const Watch = () => {
       <div className="watch-main">
         <div className="video-player">
           <video key={id} controls autoPlay>
-            <source src={`http://localhost:5000${video.video_url}`} type="video/mp4" />
+            <source
+              src={video.video_url?.startsWith('http') ? video.video_url : `${import.meta.env.VITE_API_URL?.replace('/api', '')}${video.video_url}`}
+              type="video/mp4"
+            />
             Your browser does not support the video tag.
           </video>
         </div>
