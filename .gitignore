@@ -38,3 +38,8 @@ lerna-debug.log*
 # Vite
 dist-ssr
 *.local
+server.js.NEW
+server.js.UPDATED
+videoController_FINAL.js
+videoController_UPDATED.js
+videoController.js.SUPABASE

@@ -68,7 +68,7 @@ const Upload = () => {
               <label htmlFor="video-file" className="file-upload-label">
                 <FiUpload size={48} />
                 <p>{videoFile ? videoFile.name : 'Select video file'}</p>
-                <span className="file-hint">MP4, AVI, MOV (max 100MB)</span>
+                <span className="file-hint">MP4, AVI, MOV (max 50MB)</span>
               </label>
               <input
                 id="video-file"
